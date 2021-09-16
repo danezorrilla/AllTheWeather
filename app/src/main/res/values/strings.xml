@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">AllTheWeather</string>
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="midnight">12AM</string>
+    <string name="one_am">1AM</string>
+    <string name="two_am">2AM</string>
+    <string name="three_am">3AM</string>
+    <string name="four_am">4AM</string>
+    <string name="five_am">5AM</string>
+    <string name="six_am">6AM</string>
+    <string name="seven_am">7AM</string>
+    <string name="eight_am">8AM</string>
+    <string name="nine_am">9AM</string>
+    <string name="ten_am">10AM</string>
+    <string name="eleven_am">11AM</string>
+    <string name="noon">12PM</string>
+    <string name="one_pm">1PM</string>
+    <string name="two_pm">2PM</string>
+    <string name="three_pm">3PM</string>
+    <string name="four_pm">4PM</string>
+    <string name="five_pm">5PM</string>
+    <string name="six_pm">6PM</string>
+    <string name="seven_pm">7PM</string>
+    <string name="eight_pm">8PM</string>
+    <string name="nine_pm">9PM</string>
+    <string name="ten_pm">10PM</string>
+    <string name="eleven_pm">11PM</string>
+</resources>

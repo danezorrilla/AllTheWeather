@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/hourly_weather_type_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/time_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/time_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Time"
+        app:layout_constraintEnd_toStartOf="@+id/temp_col"
+        app:layout_constraintStart_toEndOf="@id/hourly_weather_type_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Temp"
+        app:layout_constraintEnd_toStartOf="@+id/chance_of_rain_col"
+        app:layout_constraintStart_toEndOf="@+id/time_col"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chance_of_rain_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:inputType="textMultiLine"
+        android:text="Chance\n of Rain"
+        app:layout_constraintEnd_toStartOf="@+id/wind_col"
+        app:layout_constraintStart_toEndOf="@+id/temp_col"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wind_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Wind\n(mph)"
+        app:layout_constraintEnd_toStartOf="@+id/humidity_col"
+        app:layout_constraintStart_toEndOf="@+id/chance_of_rain_col"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/humidity_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Humidity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="12AM"
+        app:layout_constraintEnd_toStartOf="@+id/temp_textview"
+        app:layout_constraintStart_toEndOf="@+id/hourly_weather_type_image"
+        app:layout_constraintTop_toBottomOf="@+id/time_col" />
+
+    <TextView
+        android:id="@+id/temp_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="72"
+        app:layout_constraintEnd_toStartOf="@+id/chance_of_rain_textview"
+        app:layout_constraintStart_toEndOf="@id/time_textview"
+        app:layout_constraintTop_toBottomOf="@+id/temp_col" />
+
+    <TextView
+        android:id="@+id/chance_of_rain_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="10%"
+        app:layout_constraintEnd_toStartOf="@+id/wind_textview"
+        app:layout_constraintStart_toEndOf="@+id/temp_textview"
+        app:layout_constraintTop_toBottomOf="@+id/chance_of_rain_col" />
+
+    <TextView
+        android:id="@+id/wind_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="2.2"
+        app:layout_constraintEnd_toStartOf="@+id/humidity_textview"
+        app:layout_constraintStart_toEndOf="@+id/chance_of_rain_textview"
+        app:layout_constraintTop_toBottomOf="@+id/wind_col" />
+
+    <TextView
+        android:id="@+id/humidity_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="60%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_col" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
